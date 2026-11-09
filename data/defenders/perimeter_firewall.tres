@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DefenderData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/DefenderData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "perimeter_firewall"
+display_name = "Perimeter Firewall"
+max_integrity = 70
+attack_noise = 2
+is_human = false
+is_boss = true
+behavior = "rule_sets"
+rules = PackedStringArray("deny_exploit", "rate_limit", "deep_inspection")
+description = "Boss. Its rule set changes every 2 turns."
+codex_defense = "Layered perimeter rules with deep packet inspection and rate limiting."

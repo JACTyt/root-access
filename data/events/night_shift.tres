@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/EventData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "night_shift"
+title = "The Night Shift"
+text = "A tired helpdesk tech is alone on shift and asks if you're the contractor."
+choices = PackedStringArray("Play along (+1 Scan, +2 Trace)", "Pay off a fake invoice (-20 Data, -8 Trace)", "Hang up")
+outcomes = PackedStringArray("scans:1;trace:2", "data:-20;trace:-8", "")

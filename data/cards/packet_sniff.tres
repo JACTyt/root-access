@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "reveal"
+amount = 0
+
+[sub_resource type="Resource" id="e1"]
+script = ExtResource("2")
+kind = "scan"
+amount = 1
+
+[resource]
+script = ExtResource("1")
+id = "packet_sniff"
+display_name = "Packet Sniff"
+type = "recon"
+cost = 0
+noise = 1
+effects = Array[ExtResource("2")]([SubResource("e0"), SubResource("e1")])
+description = "Reveal intents. +1 Scan."
+upgraded_name = "Passive Sniff"
+upgraded_cost = -1
+upgraded_noise = 0
+upgraded_amount_bonus = 0
+upgraded_description = "Reveal intents. +1 Scan. No noise."
+codex_technique = "Listening to traffic on a network segment."
+codex_defense = "Stopped by encrypting traffic and segmenting networks."

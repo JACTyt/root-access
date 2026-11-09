@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "draw"
+amount = 2
+
+[sub_resource type="Resource" id="e1"]
+script = ExtResource("2")
+kind = "scan"
+amount = 1
+
+[resource]
+script = ExtResource("1")
+id = "osint"
+display_name = "OSINT"
+type = "recon"
+cost = 1
+noise = 0
+effects = Array[ExtResource("2")]([SubResource("e0"), SubResource("e1")])
+description = "Draw 2. +1 Scan."
+upgraded_name = "Deep OSINT"
+upgraded_cost = 0
+upgraded_noise = -1
+upgraded_amount_bonus = 0
+upgraded_description = "Costs 0. Draw 2. +1 Scan."
+codex_technique = "Gathering public information about a target."
+codex_defense = "Hard to detect. Reduced by limiting what staff and sites publish."

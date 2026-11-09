@@ -1,0 +1,22 @@
+# Godot
+.godot/
+.import/
+*.translation
+export_credentials.cfg
+
+# Builds
+build/
+
+# Temp and logs
+*.tmp
+*.log
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

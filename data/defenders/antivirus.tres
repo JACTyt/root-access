@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DefenderData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/DefenderData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "antivirus"
+display_name = "Antivirus"
+max_integrity = 16
+attack_noise = 1
+is_human = false
+is_boss = false
+behavior = "quarantine"
+rules = PackedStringArray()
+description = "Quarantines your highest-noise card each turn, for this fight."
+codex_defense = "Signatures and behavior analysis catch known and noisy tools."

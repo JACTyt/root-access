@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "half_noise_next"
+amount = 3
+
+[resource]
+script = ExtResource("1")
+id = "proxy_chain"
+display_name = "Proxy Chain"
+type = "stealth"
+cost = 1
+noise = 0
+effects = Array[ExtResource("2")]([SubResource("e0")])
+description = "Your next 3 cards make half noise."
+upgraded_name = "Onion Route"
+upgraded_cost = -1
+upgraded_noise = -1
+upgraded_amount_bonus = 2
+upgraded_description = "Your next 5 cards make half noise."
+codex_technique = "Relaying traffic to hide where it comes from."
+codex_defense = "Detected by blocking known anonymizers and spotting odd login origins."

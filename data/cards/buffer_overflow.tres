@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "damage"
+amount = 24
+
+[resource]
+script = ExtResource("1")
+id = "buffer_overflow"
+display_name = "Buffer Overflow"
+type = "exploit"
+cost = 3
+noise = 7
+effects = Array[ExtResource("2")]([SubResource("e0")])
+description = "24 damage."
+upgraded_name = "Return Chain"
+upgraded_cost = -1
+upgraded_noise = 4
+upgraded_amount_bonus = 0
+upgraded_description = "24 damage. Only 4 noise."
+codex_technique = "Corrupting a program's memory to change its behavior."
+codex_defense = "Reduced by memory-safe languages, ASLR and prompt patching."

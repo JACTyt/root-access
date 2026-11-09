@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "backdoor"
+amount = 1
+
+[resource]
+script = ExtResource("1")
+id = "backdoor"
+display_name = "Backdoor"
+type = "persistence"
+cost = 2
+noise = 2
+effects = Array[ExtResource("2")]([SubResource("e0")])
+description = "For the rest of the run: +1 CPU on the first turn of each later fight."
+upgraded_name = "Hidden Backdoor"
+upgraded_cost = 1
+upgraded_noise = -1
+upgraded_amount_bonus = 0
+upgraded_description = "Costs 1. For the rest of the run: +1 CPU on the first turn of each later fight."
+codex_technique = "Leaving a way back into a compromised system."
+codex_defense = "Detected by integrity monitoring. Removed by rebuilding from known-good images."

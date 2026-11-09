@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/EventData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "broker"
+title = "The Broker"
+text = "A broker on a private channel offers Halcyon's network map for a price."
+choices = PackedStringArray("Buy the map (-15 Data, +2 Scans)", "Sell them your logs (+20 Data, +5 Trace)", "Close the channel")
+outcomes = PackedStringArray("data:-15;scans:2", "data:20;trace:5", "")

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DefenderData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/DefenderData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "edr_agent"
+display_name = "EDR Agent"
+max_integrity = 18
+attack_noise = 1
+is_human = false
+is_boss = false
+behavior = "learn"
+rules = PackedStringArray()
+description = "The same card twice in a row fizzles: CPU spent, +2 Trace."
+codex_defense = "Endpoint detection correlates repeated behavior over time."

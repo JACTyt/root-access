@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NodeTypeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/NodeTypeData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "workstation"
+display_name = "Workstation"
+glyph = "W"
+color = Color(1, 0.75, 0.25, 1)
+role = "encounter"
+weight = 3
+defender_groups = PackedStringArray("sysadmin", "antivirus", "ids_sensor+sysadmin")
+data_min = 10
+data_max = 18

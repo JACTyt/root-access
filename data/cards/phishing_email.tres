@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "human_damage"
+amount = 8
+amount_alt = 2
+
+[sub_resource type="Resource" id="e1"]
+script = ExtResource("2")
+kind = "distract"
+amount = 1
+
+[resource]
+script = ExtResource("1")
+id = "phishing_email"
+display_name = "Phishing Email"
+type = "social"
+cost = 1
+noise = 1
+effects = Array[ExtResource("2")]([SubResource("e0"), SubResource("e1")])
+description = "Human: 8 damage, Distract 1. Machine: 2 damage."
+upgraded_name = "Spear Phish"
+upgraded_cost = -1
+upgraded_noise = -1
+upgraded_amount_bonus = 4
+upgraded_description = "Human: 12 damage, Distract 1. Machine: 2 damage."
+codex_technique = "Tricking someone with a convincing message."
+codex_defense = "Stopped by MFA and training. Detected by mail filtering."

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "gain_data"
+amount = 15
+
+[sub_resource type="Resource" id="e1"]
+script = ExtResource("2")
+kind = "upload"
+amount = 20
+
+[resource]
+script = ExtResource("1")
+id = "data_exfil"
+display_name = "Data Exfil"
+type = "payload"
+cost = 2
+noise = 3
+effects = Array[ExtResource("2")]([SubResource("e0"), SubResource("e1")])
+description = "+15 Data. During Exfil: 20 Upload."
+upgraded_name = "Slow Drip"
+upgraded_cost = -1
+upgraded_noise = -1
+upgraded_amount_bonus = 10
+upgraded_description = "+25 Data. During Exfil: 20 Upload."
+codex_technique = "Moving stolen data out of the network."
+codex_defense = "Detected by data loss prevention and outbound traffic monitoring."

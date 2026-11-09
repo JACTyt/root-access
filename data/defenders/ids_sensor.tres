@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="DefenderData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/DefenderData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "ids_sensor"
+display_name = "IDS Sensor"
+max_integrity = 10
+attack_noise = 1
+is_human = false
+is_boss = false
+behavior = "double_noise"
+rules = PackedStringArray()
+description = "Your cards make double noise while it's alive."
+codex_defense = "Network sensors alert analysts to suspicious traffic."

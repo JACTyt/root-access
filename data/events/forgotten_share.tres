@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/EventData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "forgotten_share"
+title = "Forgotten File Share"
+text = "An open share at Halcyon Meridian holds an old admin's notes. Copying it all will be loud."
+choices = PackedStringArray("Copy everything (+25 Data, +8 Trace)", "Grab only the credentials (+1 Credential, +3 Trace)", "Leave it")
+outcomes = PackedStringArray("data:25;trace:8", "credentials:1;trace:3", "")

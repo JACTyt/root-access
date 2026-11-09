@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NodeTypeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/NodeTypeData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "exfil"
+display_name = "Exfil"
+glyph = "X"
+color = Color(0.24, 1, 0.62, 1)
+role = "exfil"
+weight = 0
+defender_groups = PackedStringArray()
+data_min = 0
+data_max = 0

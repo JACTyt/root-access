@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "damage"
+amount = 13
+
+[resource]
+script = ExtResource("1")
+id = "sql_injection"
+display_name = "SQL Injection"
+type = "exploit"
+cost = 2
+noise = 4
+effects = Array[ExtResource("2")]([SubResource("e0")])
+description = "13 damage."
+upgraded_name = "Blind Injection"
+upgraded_cost = -1
+upgraded_noise = -1
+upgraded_amount_bonus = 5
+upgraded_description = "18 damage."
+codex_technique = "Abusing an app that trusts its input."
+codex_defense = "Stopped by parameterized queries. Detected by a web application firewall."

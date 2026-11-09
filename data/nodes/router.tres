@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NodeTypeData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/NodeTypeData.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "router"
+display_name = "Router"
+glyph = "R"
+color = Color(1, 0.27, 0.3, 1)
+role = "encounter"
+weight = 2
+defender_groups = PackedStringArray("firewall", "firewall+ids_sensor")
+data_min = 14
+data_max = 20

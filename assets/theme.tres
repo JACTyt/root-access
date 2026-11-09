@@ -1,0 +1,74 @@
+[gd_resource type="Theme" load_steps=7 format=3]
+
+[ext_resource type="FontFile" path="res://assets/fonts/JetBrainsMono.ttf" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="panel"]
+bg_color = Color(0.05, 0.08, 0.09, 0.94)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.14, 0.42, 0.3, 1)
+content_margin_left = 10.0
+content_margin_top = 8.0
+content_margin_right = 10.0
+content_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id="btn"]
+bg_color = Color(0.05, 0.12, 0.1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.24, 1, 0.62, 1)
+content_margin_left = 14.0
+content_margin_top = 6.0
+content_margin_right = 14.0
+content_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxFlat" id="btn_hover"]
+bg_color = Color(0.1, 0.26, 0.19, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.5, 1, 0.76, 1)
+content_margin_left = 14.0
+content_margin_top = 6.0
+content_margin_right = 14.0
+content_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxFlat" id="btn_off"]
+bg_color = Color(0.05, 0.06, 0.07, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.2, 0.25, 0.25, 1)
+content_margin_left = 14.0
+content_margin_top = 6.0
+content_margin_right = 14.0
+content_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxFlat" id="bar_bg"]
+bg_color = Color(0.03, 0.05, 0.06, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.2, 0.3, 0.28, 1)
+
+[resource]
+default_font = ExtResource("1")
+default_font_size = 15
+Label/colors/font_color = Color(0.78, 0.92, 0.85, 1)
+Button/colors/font_color = Color(0.24, 1, 0.62, 1)
+Button/colors/font_hover_color = Color(0.85, 1, 0.92, 1)
+Button/colors/font_disabled_color = Color(0.35, 0.42, 0.42, 1)
+Button/styles/normal = SubResource("btn")
+Button/styles/hover = SubResource("btn_hover")
+Button/styles/pressed = SubResource("btn_hover")
+Button/styles/disabled = SubResource("btn_off")
+Button/styles/focus = SubResource("btn_hover")
+PanelContainer/styles/panel = SubResource("panel")
+ProgressBar/styles/background = SubResource("bar_bg")

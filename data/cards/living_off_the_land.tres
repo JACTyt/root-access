@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/data/CardData.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/data/EffectData.gd" id="2"]
+
+[sub_resource type="Resource" id="e0"]
+script = ExtResource("2")
+kind = "damage"
+amount = 4
+
+[resource]
+script = ExtResource("1")
+id = "living_off_the_land"
+display_name = "Living off the Land"
+type = "stealth"
+cost = 1
+noise = 0
+effects = Array[ExtResource("2")]([SubResource("e0")])
+description = "4 damage. No noise."
+upgraded_name = "Signed Binary"
+upgraded_cost = -1
+upgraded_noise = -1
+upgraded_amount_bonus = 3
+upgraded_description = "7 damage. No noise."
+codex_technique = "Using a system's own admin tools instead of malware."
+codex_defense = "Detected by behavior monitoring and restricting admin tools."
